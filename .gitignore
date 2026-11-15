@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.DS_Store
+data/calibration.json
+# third-party / not-cleared audio stays out of the public repo
+assets/raw/
+web/sounds/uncle/
+web/sounds/meme/
+_to_delete/
+
+# rendered media may contain the uncle clip
+media/*.mp4
+media/remotion/public/sfx/
+media/remotion/public/screen.mp4
+media/remotion/node_modules/

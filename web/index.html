@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FartBook Pro</title>
+<link rel="preload" href="vendor/fonts/gluten-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="start">
+  <div class="start-card">
+    <canvas id="startCushion" class="start-cushion" aria-hidden="true"></canvas>
+    <h1>fartbook pro</h1>
+    <p>your laptop was a whoopee cushion the whole time</p>
+    <button id="startBtn">start the show</button>
+    <small>sound needs one click to wake up</small>
+  </div>
+</div>
+
+<!-- The stage is one 1440 x 900 drawing (docs/design/05_direction), scaled to fit the screen by visuals.js.
+     It is a MacBook seen from above with a whoopee cushion left on the keyboard. -->
+<div id="stage" class="stage">
+  <header class="chrome">
+    <div class="brand">fartbook pro</div>
+    <div class="status">
+      <div id="sensorStatus" class="pill off">sensors offline</div>
+      <div id="loopStatus" class="pill">loop off</div>
+      <div class="pill bpm">92 bpm</div>
+      <div id="ratePill" class="pill">0 Hz</div>
+      <button id="calBtn" class="ghost">calibrate</button>
+    </div>
+  </header>
+
+  <div class="rig">
+    <!-- deck, hinge strip, keyboard, silver side rails: drawn by visuals.js -->
+    <svg id="deck" class="deck" viewBox="0 0 1440 900" aria-hidden="true">
+      <rect x="24" y="62" width="1392" height="798" rx="40" fill="#241F3E" stroke="#1B1730" stroke-width="6"/>
+    </svg>
+    <canvas id="haze" class="layer haze" aria-hidden="true"></canvas>
+    <canvas id="board" class="layer board" aria-hidden="true"></canvas>
+    <div class="spacebar"><span id="stinkText">fresh</span></div>
+
+    <div class="trackpad" data-bank="uncle">
+      <!-- 1:1 map of the real trackpad: 2 rows x 4. app.js fills each square from the current bank (Tab switches) -->
+      <div class="pad" data-slot="0"></div><div class="pad" data-slot="1"></div><div class="pad" data-slot="2"></div><div class="pad" data-slot="3"></div>
+      <div class="pad" data-slot="4"></div><div class="pad" data-slot="5"></div><div class="pad" data-slot="6"></div><div class="pad" data-slot="7"></div>
+      <button class="bank" id="bankBtn" type="button" aria-label="switch bank (Tab)"><b id="bankName">uncle</b><i class="tab-u">uncle</i><i class="tab-n">notes</i><i class="kcap">tab</i><span>switch</span></button>
+    </div>
+
+    <!-- the drum pads sit against the silver sides; 8-square mode adds the inner four -->
+    <main class="laptop">
+      <div class="zone" data-zone="LT"><b>wet</b><span>A</span></div>
+      <div class="zone extra" data-zone="LT2"><b>puff</b><span>S</span></div>
+      <div class="zone extra" data-zone="LB2"><b>tom</b><span>X</span></div>
+      <div class="zone" data-zone="LB"><b>kick</b><span>Z</span></div>
+      <div class="zone" data-zone="RT"><b>squeak</b><span>K</span></div>
+      <div class="zone extra" data-zone="RT2"><b>clap</b><span>L</span></div>
+      <div class="zone extra" data-zone="RB2"><b>crash</b><span>.</span></div>
+      <div class="zone" data-zone="RB"><b>snare</b><span>,</span></div>
+    </main>
+
+    <canvas id="fx" class="layer fx" aria-hidden="true"></canvas>
+  </div>
+
+  <div id="dim" class="dim" aria-hidden="true"></div>
+  <canvas id="burst" class="layer burst" aria-hidden="true"></canvas>
+  <canvas id="cushion" class="layer cushion" aria-label="whoopee cushion sitting on the keyboard"></canvas>
+  <div id="caption" class="caption" aria-live="polite"></div>
+
+  <!-- app.js still writes these; the cushion, the hinge beads and the haze show them on screen -->
+  <div class="meters" aria-hidden="true">
+    <div id="airText">0%</div><div class="tank"><div id="air"></div></div>
+    <div class="tank"><div id="stink"></div></div>
+    <div id="balloon"></div>
+    <div id="loopbar" class="loopbar"><div id="playhead" class="playhead"></div></div>
+  </div>
+
+  <footer id="footer"><b>tab</b> bank &nbsp; <b>space</b> loop &nbsp; <b>g</b> pump air &nbsp; <b>f</b> freshener &nbsp; <b>h</b> long fart &nbsp; <b>v</b> 4 or 8 squares &nbsp; <b>p</b> pause &nbsp; <b>c</b> clear &nbsp; <b>?</b> how to play</footer>
+
+  <div id="wizard" class="wizard hidden">
+    <div class="wiz-steps"><span data-s="0">1 quiet</span><span data-s="1">2 squares</span><span data-s="2">3 soft and hard</span><span data-s="3">4 test</span></div>
+    <h2 id="wizTitle"></h2>
+    <p id="wizText"></p>
+    <div class="wiz-progress"><div id="wizBar"></div></div>
+    <div id="wizInfo" class="wiz-info"></div>
+    <div class="wiz-buttons">
+      <button id="wizSkip" class="ghost">skip step</button>
+      <button id="wizClose" class="ghost">close</button>
+      <button id="wizGo" class="go">Start</button>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <div id="endcard" class="endcard" aria-hidden="true">
+    <div class="endcard-inner">
+      <div class="endcard-title">FartBook Pro</div>
+      <div class="endcard-line">your laptop was a whoopee cushion the whole time</div>
+      <div class="endcard-name">Wilsawn Dideh, Stupid Ideas Hackathon Ottawa</div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/Tone.js"></script>
+<script src="vendor/rough.js"></script>
+<script src="vendor/gsap-3.13/gsap.min.js"></script>
+<script src="vendor/gsap-3.13/CustomEase.min.js"></script>
+<script src="vendor/gsap-3.13/CustomBounce.min.js"></script>
+<script src="vendor/gsap-3.13/CustomWiggle.min.js"></script>
+<script src="vendor/gsap-3.13/MorphSVGPlugin.min.js"></script>
+<script src="vendor/gsap-3.13/Physics2DPlugin.min.js"></script>
+<script src="app.js"></script>
+<script src="visuals.js"></script>
+<script type="module" src="analyzer.js"></script>
+</body>
+</html>

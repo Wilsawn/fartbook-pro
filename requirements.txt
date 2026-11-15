@@ -1,0 +1,2 @@
+# Only the sensor server needs a package. The bridge and web page use the standard library + bundled Tone.js.
+macimu

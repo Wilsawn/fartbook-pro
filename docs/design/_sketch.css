@@ -1,0 +1,5 @@
+body{margin:0;width:1440px;height:900px;background:#eee;font:16px/1.2 monospace;color:#333;position:relative;overflow:hidden}
+.b{position:absolute;border:2px solid #333;display:grid;place-items:center;text-align:center;background:#fff}
+.o{border-radius:50%}
+.t{position:absolute;font-size:22px;font-weight:bold}
+.note{position:absolute;bottom:10px;left:10px;font-size:14px;background:#ffd;padding:6px 10px;border:1px solid #333}

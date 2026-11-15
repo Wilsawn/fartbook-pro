@@ -1,0 +1,184 @@
+[
+ {
+  "text": "What's",
+  "startMs": 200,
+  "endMs": 422,
+  "timestampMs": 311,
+  "confidence": 1
+ },
+ {
+  "text": " up",
+  "startMs": 422,
+  "endMs": 644,
+  "timestampMs": 533,
+  "confidence": 1
+ },
+ {
+  "text": " guys,",
+  "startMs": 644,
+  "endMs": 866,
+  "timestampMs": 755,
+  "confidence": 1
+ },
+ {
+  "text": " so",
+  "startMs": 867,
+  "endMs": 1089,
+  "timestampMs": 978,
+  "confidence": 1
+ },
+ {
+  "text": " I",
+  "startMs": 1089,
+  "endMs": 1311,
+  "timestampMs": 1200,
+  "confidence": 1
+ },
+ {
+  "text": " built",
+  "startMs": 1311,
+  "endMs": 1533,
+  "timestampMs": 1422,
+  "confidence": 1
+ },
+ {
+  "text": " a",
+  "startMs": 1533,
+  "endMs": 1755,
+  "timestampMs": 1644,
+  "confidence": 1
+ },
+ {
+  "text": " fart",
+  "startMs": 1756,
+  "endMs": 1978,
+  "timestampMs": 1867,
+  "confidence": 1
+ },
+ {
+  "text": " instrument.",
+  "startMs": 1978,
+  "endMs": 2200,
+  "timestampMs": 2089,
+  "confidence": 1
+ },
+ {
+  "text": " Out",
+  "startMs": 2600,
+  "endMs": 2825,
+  "timestampMs": 2713,
+  "confidence": 1
+ },
+ {
+  "text": " of",
+  "startMs": 2825,
+  "endMs": 3050,
+  "timestampMs": 2938,
+  "confidence": 1
+ },
+ {
+  "text": " my",
+  "startMs": 3050,
+  "endMs": 3275,
+  "timestampMs": 3163,
+  "confidence": 1
+ },
+ {
+  "text": " MacBook.",
+  "startMs": 3275,
+  "endMs": 3500,
+  "timestampMs": 3388,
+  "confidence": 1
+ },
+ {
+  "text": " The",
+  "startMs": 3800,
+  "endMs": 4100,
+  "timestampMs": 3950,
+  "confidence": 1
+ },
+ {
+  "text": " silver",
+  "startMs": 4100,
+  "endMs": 4400,
+  "timestampMs": 4250,
+  "confidence": 1
+ },
+ {
+  "text": " sides",
+  "startMs": 4400,
+  "endMs": 4700,
+  "timestampMs": 4550,
+  "confidence": 1
+ },
+ {
+  "text": " are",
+  "startMs": 4700,
+  "endMs": 5000,
+  "timestampMs": 4850,
+  "confidence": 1
+ },
+ {
+  "text": " drum",
+  "startMs": 5000,
+  "endMs": 5300,
+  "timestampMs": 5150,
+  "confidence": 1
+ },
+ {
+  "text": " pads.",
+  "startMs": 5300,
+  "endMs": 5600,
+  "timestampMs": 5450,
+  "confidence": 1
+ },
+ {
+  "text": " And",
+  "startMs": 5800,
+  "endMs": 6157,
+  "timestampMs": 5979,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 6157,
+  "endMs": 6514,
+  "timestampMs": 6336,
+  "confidence": 1
+ },
+ {
+  "text": " lid",
+  "startMs": 6514,
+  "endMs": 6871,
+  "timestampMs": 6693,
+  "confidence": 1
+ },
+ {
+  "text": " fills",
+  "startMs": 6871,
+  "endMs": 7228,
+  "timestampMs": 7050,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 7229,
+  "endMs": 7586,
+  "timestampMs": 7408,
+  "confidence": 1
+ },
+ {
+  "text": " air",
+  "startMs": 7586,
+  "endMs": 7943,
+  "timestampMs": 7765,
+  "confidence": 1
+ },
+ {
+  "text": " tank.",
+  "startMs": 7943,
+  "endMs": 8300,
+  "timestampMs": 8122,
+  "confidence": 1
+ }
+]

@@ -1,0 +1,674 @@
+[
+ {
+  "text": "What's",
+  "startMs": 300,
+  "endMs": 556,
+  "timestampMs": 428,
+  "confidence": 1
+ },
+ {
+  "text": " up",
+  "startMs": 556,
+  "endMs": 812,
+  "timestampMs": 684,
+  "confidence": 1
+ },
+ {
+  "text": " guys,",
+  "startMs": 811,
+  "endMs": 1067,
+  "timestampMs": 939,
+  "confidence": 1
+ },
+ {
+  "text": " so",
+  "startMs": 1067,
+  "endMs": 1323,
+  "timestampMs": 1195,
+  "confidence": 1
+ },
+ {
+  "text": " I",
+  "startMs": 1322,
+  "endMs": 1578,
+  "timestampMs": 1450,
+  "confidence": 1
+ },
+ {
+  "text": " built",
+  "startMs": 1578,
+  "endMs": 1834,
+  "timestampMs": 1706,
+  "confidence": 1
+ },
+ {
+  "text": " a",
+  "startMs": 1833,
+  "endMs": 2089,
+  "timestampMs": 1961,
+  "confidence": 1
+ },
+ {
+  "text": " fart",
+  "startMs": 2089,
+  "endMs": 2345,
+  "timestampMs": 2217,
+  "confidence": 1
+ },
+ {
+  "text": " instrument.",
+  "startMs": 2344,
+  "endMs": 2600,
+  "timestampMs": 2472,
+  "confidence": 1
+ },
+ {
+  "text": " Out",
+  "startMs": 2700,
+  "endMs": 2975,
+  "timestampMs": 2838,
+  "confidence": 1
+ },
+ {
+  "text": " of",
+  "startMs": 2975,
+  "endMs": 3250,
+  "timestampMs": 3113,
+  "confidence": 1
+ },
+ {
+  "text": " my",
+  "startMs": 3250,
+  "endMs": 3525,
+  "timestampMs": 3388,
+  "confidence": 1
+ },
+ {
+  "text": " MacBook.",
+  "startMs": 3525,
+  "endMs": 3800,
+  "timestampMs": 3663,
+  "confidence": 1
+ },
+ {
+  "text": " Apple",
+  "startMs": 4600,
+  "endMs": 4850,
+  "timestampMs": 4725,
+  "confidence": 1
+ },
+ {
+  "text": " hid",
+  "startMs": 4850,
+  "endMs": 5100,
+  "timestampMs": 4975,
+  "confidence": 1
+ },
+ {
+  "text": " a",
+  "startMs": 5100,
+  "endMs": 5350,
+  "timestampMs": 5225,
+  "confidence": 1
+ },
+ {
+  "text": " motion",
+  "startMs": 5350,
+  "endMs": 5600,
+  "timestampMs": 5475,
+  "confidence": 1
+ },
+ {
+  "text": " sensor",
+  "startMs": 5600,
+  "endMs": 5850,
+  "timestampMs": 5725,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 5850,
+  "endMs": 6100,
+  "timestampMs": 5975,
+  "confidence": 1
+ },
+ {
+  "text": " this",
+  "startMs": 6100,
+  "endMs": 6350,
+  "timestampMs": 6225,
+  "confidence": 1
+ },
+ {
+  "text": " MacBook",
+  "startMs": 6350,
+  "endMs": 6600,
+  "timestampMs": 6475,
+  "confidence": 1
+ },
+ {
+  "text": " and",
+  "startMs": 6600,
+  "endMs": 6850,
+  "timestampMs": 6725,
+  "confidence": 1
+ },
+ {
+  "text": " never",
+  "startMs": 6850,
+  "endMs": 7100,
+  "timestampMs": 6975,
+  "confidence": 1
+ },
+ {
+  "text": " told",
+  "startMs": 7100,
+  "endMs": 7350,
+  "timestampMs": 7225,
+  "confidence": 1
+ },
+ {
+  "text": " anyone.",
+  "startMs": 7350,
+  "endMs": 7600,
+  "timestampMs": 7475,
+  "confidence": 1
+ },
+ {
+  "text": " So",
+  "startMs": 7800,
+  "endMs": 8114,
+  "timestampMs": 7957,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 8114,
+  "endMs": 8428,
+  "timestampMs": 8271,
+  "confidence": 1
+ },
+ {
+  "text": " silver",
+  "startMs": 8429,
+  "endMs": 8743,
+  "timestampMs": 8586,
+  "confidence": 1
+ },
+ {
+  "text": " sides",
+  "startMs": 8743,
+  "endMs": 9057,
+  "timestampMs": 8900,
+  "confidence": 1
+ },
+ {
+  "text": " are",
+  "startMs": 9057,
+  "endMs": 9371,
+  "timestampMs": 9214,
+  "confidence": 1
+ },
+ {
+  "text": " drum",
+  "startMs": 9371,
+  "endMs": 9685,
+  "timestampMs": 9528,
+  "confidence": 1
+ },
+ {
+  "text": " pads.",
+  "startMs": 9686,
+  "endMs": 10000,
+  "timestampMs": 9843,
+  "confidence": 1
+ },
+ {
+  "text": " The",
+  "startMs": 12200,
+  "endMs": 12480,
+  "timestampMs": 12340,
+  "confidence": 1
+ },
+ {
+  "text": " trackpad",
+  "startMs": 12480,
+  "endMs": 12760,
+  "timestampMs": 12620,
+  "confidence": 1
+ },
+ {
+  "text": " is",
+  "startMs": 12760,
+  "endMs": 13040,
+  "timestampMs": 12900,
+  "confidence": 1
+ },
+ {
+  "text": " my",
+  "startMs": 13040,
+  "endMs": 13320,
+  "timestampMs": 13180,
+  "confidence": 1
+ },
+ {
+  "text": " uncle.",
+  "startMs": 13320,
+  "endMs": 13600,
+  "timestampMs": 13460,
+  "confidence": 1
+ },
+ {
+  "text": " uncle...",
+  "startMs": 14000,
+  "endMs": 15000,
+  "timestampMs": 14500,
+  "confidence": 1
+ },
+ {
+  "text": " ...not",
+  "startMs": 15200,
+  "endMs": 15800,
+  "timestampMs": 15500,
+  "confidence": 1
+ },
+ {
+  "text": " now.",
+  "startMs": 15800,
+  "endMs": 16400,
+  "timestampMs": 16100,
+  "confidence": 1
+ },
+ {
+  "text": " Hit",
+  "startMs": 19500,
+  "endMs": 19875,
+  "timestampMs": 19688,
+  "confidence": 1
+ },
+ {
+  "text": " space,",
+  "startMs": 19875,
+  "endMs": 20250,
+  "timestampMs": 20063,
+  "confidence": 1
+ },
+ {
+  "text": " it",
+  "startMs": 20250,
+  "endMs": 20625,
+  "timestampMs": 20438,
+  "confidence": 1
+ },
+ {
+  "text": " loops.",
+  "startMs": 20625,
+  "endMs": 21000,
+  "timestampMs": 20813,
+  "confidence": 1
+ },
+ {
+  "text": " But",
+  "startMs": 24500,
+  "endMs": 24750,
+  "timestampMs": 24625,
+  "confidence": 1
+ },
+ {
+  "text": " farts",
+  "startMs": 24750,
+  "endMs": 25000,
+  "timestampMs": 24875,
+  "confidence": 1
+ },
+ {
+  "text": " need",
+  "startMs": 25000,
+  "endMs": 25250,
+  "timestampMs": 25125,
+  "confidence": 1
+ },
+ {
+  "text": " air.",
+  "startMs": 25250,
+  "endMs": 25500,
+  "timestampMs": 25375,
+  "confidence": 1
+ },
+ {
+  "text": " So",
+  "startMs": 25500,
+  "endMs": 25750,
+  "timestampMs": 25625,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 25750,
+  "endMs": 26000,
+  "timestampMs": 25875,
+  "confidence": 1
+ },
+ {
+  "text": " lid",
+  "startMs": 26000,
+  "endMs": 26250,
+  "timestampMs": 26125,
+  "confidence": 1
+ },
+ {
+  "text": " is",
+  "startMs": 26250,
+  "endMs": 26500,
+  "timestampMs": 26375,
+  "confidence": 1
+ },
+ {
+  "text": " a",
+  "startMs": 26500,
+  "endMs": 26750,
+  "timestampMs": 26625,
+  "confidence": 1
+ },
+ {
+  "text": " bellows.",
+  "startMs": 26750,
+  "endMs": 27000,
+  "timestampMs": 26875,
+  "confidence": 1
+ },
+ {
+  "text": " Fill",
+  "startMs": 30200,
+  "endMs": 30440,
+  "timestampMs": 30320,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 30440,
+  "endMs": 30680,
+  "timestampMs": 30560,
+  "confidence": 1
+ },
+ {
+  "text": " tank,",
+  "startMs": 30680,
+  "endMs": 30920,
+  "timestampMs": 30800,
+  "confidence": 1
+ },
+ {
+  "text": " and",
+  "startMs": 30920,
+  "endMs": 31160,
+  "timestampMs": 31040,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 31160,
+  "endMs": 31400,
+  "timestampMs": 31280,
+  "confidence": 1
+ },
+ {
+  "text": " bottom",
+  "startMs": 31400,
+  "endMs": 31640,
+  "timestampMs": 31520,
+  "confidence": 1
+ },
+ {
+  "text": " row",
+  "startMs": 31640,
+  "endMs": 31880,
+  "timestampMs": 31760,
+  "confidence": 1
+ },
+ {
+  "text": " plays",
+  "startMs": 31880,
+  "endMs": 32120,
+  "timestampMs": 32000,
+  "confidence": 1
+ },
+ {
+  "text": " fart",
+  "startMs": 32120,
+  "endMs": 32360,
+  "timestampMs": 32240,
+  "confidence": 1
+ },
+ {
+  "text": " notes.",
+  "startMs": 32360,
+  "endMs": 32600,
+  "timestampMs": 32480,
+  "confidence": 1
+ },
+ {
+  "text": " No",
+  "startMs": 36600,
+  "endMs": 36900,
+  "timestampMs": 36750,
+  "confidence": 1
+ },
+ {
+  "text": " air,",
+  "startMs": 36900,
+  "endMs": 37200,
+  "timestampMs": 37050,
+  "confidence": 1
+ },
+ {
+  "text": " no",
+  "startMs": 37200,
+  "endMs": 37500,
+  "timestampMs": 37350,
+  "confidence": 1
+ },
+ {
+  "text": " notes.",
+  "startMs": 37500,
+  "endMs": 37800,
+  "timestampMs": 37650,
+  "confidence": 1
+ },
+ {
+  "text": " Oh",
+  "startMs": 41200,
+  "endMs": 41500,
+  "timestampMs": 41350,
+  "confidence": 1
+ },
+ {
+  "text": " no.",
+  "startMs": 41500,
+  "endMs": 41800,
+  "timestampMs": 41650,
+  "confidence": 1
+ },
+ {
+  "text": " Air",
+  "startMs": 41800,
+  "endMs": 42100,
+  "timestampMs": 41950,
+  "confidence": 1
+ },
+ {
+  "text": " freshener.",
+  "startMs": 42100,
+  "endMs": 42400,
+  "timestampMs": 42250,
+  "confidence": 1
+ },
+ {
+  "text": " Your",
+  "startMs": 44300,
+  "endMs": 44667,
+  "timestampMs": 44483,
+  "confidence": 1
+ },
+ {
+  "text": " laptop",
+  "startMs": 44667,
+  "endMs": 45034,
+  "timestampMs": 44850,
+  "confidence": 1
+ },
+ {
+  "text": " was",
+  "startMs": 45033,
+  "endMs": 45400,
+  "timestampMs": 45216,
+  "confidence": 1
+ },
+ {
+  "text": " a",
+  "startMs": 45400,
+  "endMs": 45767,
+  "timestampMs": 45583,
+  "confidence": 1
+ },
+ {
+  "text": " whoopee",
+  "startMs": 45767,
+  "endMs": 46134,
+  "timestampMs": 45950,
+  "confidence": 1
+ },
+ {
+  "text": " cushion",
+  "startMs": 46133,
+  "endMs": 46500,
+  "timestampMs": 46316,
+  "confidence": 1
+ },
+ {
+  "text": " the",
+  "startMs": 46500,
+  "endMs": 46867,
+  "timestampMs": 46683,
+  "confidence": 1
+ },
+ {
+  "text": " whole",
+  "startMs": 46867,
+  "endMs": 47234,
+  "timestampMs": 47050,
+  "confidence": 1
+ },
+ {
+  "text": " time.",
+  "startMs": 47233,
+  "endMs": 47600,
+  "timestampMs": 47416,
+  "confidence": 1
+ },
+ {
+  "text": " I'm",
+  "startMs": 48300,
+  "endMs": 48675,
+  "timestampMs": 48488,
+  "confidence": 1
+ },
+ {
+  "text": " Wilsawn,",
+  "startMs": 48675,
+  "endMs": 49050,
+  "timestampMs": 48863,
+  "confidence": 1
+ },
+ {
+  "text": " this",
+  "startMs": 49050,
+  "endMs": 49425,
+  "timestampMs": 49238,
+  "confidence": 1
+ },
+ {
+  "text": " is",
+  "startMs": 49425,
+  "endMs": 49800,
+  "timestampMs": 49613,
+  "confidence": 1
+ },
+ {
+  "text": " FartBook",
+  "startMs": 49800,
+  "endMs": 50175,
+  "timestampMs": 49988,
+  "confidence": 1
+ },
+ {
+  "text": " Pro,",
+  "startMs": 50175,
+  "endMs": 50550,
+  "timestampMs": 50363,
+  "confidence": 1
+ },
+ {
+  "text": " made",
+  "startMs": 50550,
+  "endMs": 50925,
+  "timestampMs": 50738,
+  "confidence": 1
+ },
+ {
+  "text": " at",
+  "startMs": 50925,
+  "endMs": 51300,
+  "timestampMs": 51113,
+  "confidence": 1
+ },
+ {
+  "text": " Stupid",
+  "startMs": 51300,
+  "endMs": 51675,
+  "timestampMs": 51488,
+  "confidence": 1
+ },
+ {
+  "text": " Ideas",
+  "startMs": 51675,
+  "endMs": 52050,
+  "timestampMs": 51863,
+  "confidence": 1
+ },
+ {
+  "text": " Hackathon",
+  "startMs": 52050,
+  "endMs": 52425,
+  "timestampMs": 52238,
+  "confidence": 1
+ },
+ {
+  "text": " Ottawa.",
+  "startMs": 52425,
+  "endMs": 52800,
+  "timestampMs": 52613,
+  "confidence": 1
+ },
+ {
+  "text": " Uncle,",
+  "startMs": 53000,
+  "endMs": 53533,
+  "timestampMs": 53267,
+  "confidence": 1
+ },
+ {
+  "text": " not",
+  "startMs": 53533,
+  "endMs": 54066,
+  "timestampMs": 53800,
+  "confidence": 1
+ },
+ {
+  "text": " now.",
+  "startMs": 54067,
+  "endMs": 54600,
+  "timestampMs": 54334,
+  "confidence": 1
+ }
+]
