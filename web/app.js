@@ -62,7 +62,7 @@ Object.entries(CHOKE_GROUPS).forEach(([g, names]) => names.forEach(n => { CHOKE[
 
 const state = {
   started: false, recording: false, looping: false, events: [], metronome: false,
-  air: 0, stink: 0, eightZones: false, bank: 'uncle', trackpadLive: false, sensorsLive: false, lastLid: null,
+  air: 0, stink: 0, eightZones: false, twoSides: true, bank: 'uncle', trackpadLive: false, sensorsLive: false, lastLid: null,
   lightBase: null, covered: false, force: 0.7, calibrating: false, calZone: null,
 };
 
@@ -384,10 +384,8 @@ const STINK_WORDS = [[95, 'EVACUATE BAYVIEW YARDS'], [75, 'hazardous'], [50, 'co
 let lastFrame = performance.now();
 // ---------------------------------------------------------------- guided tour: step-by-step, waits for each action (space in the ? card)
 const TOUR = [
-  { say: 'tap the BLUE spot: left palm rest, top half', key: 'or press A', zone: 'LT', ok: e => e.name === 'synth_wet' },
-  { say: 'now PURPLE: left palm rest, bottom half', key: 'or press Z', zone: 'LB', ok: e => e.name === 'synth_kick' },
-  { say: 'YELLOW: right palm rest, top half', key: 'or press K', zone: 'RT', ok: e => e.name === 'synth_squeak' },
-  { say: 'ORANGE: right palm rest, bottom half', key: 'or press comma', zone: 'RB', ok: e => e.name === 'synth_snare' },
+  { say: 'tap the silver LEFT of the trackpad: the kick fart', key: 'one finger, firm (or press Z)', zone: 'LB', ok: e => e.name === 'synth_kick' },
+  { say: 'now tap RIGHT of the trackpad: the snare fart', key: 'one finger, firm (or press comma)', zone: 'RB', ok: e => e.name === 'synth_snare' },
   { say: 'touch the trackpad, top left: the uncle', key: 'or press 1', slot: 0, bank: 'uncle', ok: e => e.name === 'voice_01' },
   { say: 'now the next square: "not now"', key: 'or press 2', slot: 1, bank: 'uncle', ok: e => e.name === 'voice_02' },
   { say: 'bottom row of the trackpad: his farts', key: 'or press 8', slot: 4, bank: 'uncle', ok: e => /^fart_0/.test(e.name) },
@@ -488,7 +486,7 @@ function buildTutorial() {
     <p class="sub">your laptop is a fart band. no clicking needed.</p>
     <div class="rows">
       <div class="row"><div class="pads"><i style="background:var(--cyan,#45C8DA)"></i><i style="background:var(--yellow,#FFC23D)"></i><i style="background:var(--violet,#8E6BF2)"></i><i style="background:var(--orange,#FF8A3D)"></i></div>
-        <div><b>tap the silver beside the trackpad</b><span>4 fart drums: left = wet / kick, right = squeak / snare</span></div></div>
+        <div><b>tap the silver beside the trackpad</b><span>left side = kick fart, right side = snare fart</span></div></div>
       <div class="row"><div class="n" style="background:var(--yellow,#FFC23D)">8</div>
         <div><b>touch the trackpad</b><span>8 squares: the uncle's voice and his farts</span></div></div>
       <div class="row"><div class="n" style="background:var(--cyan,#45C8DA)">⇅</div>
@@ -584,8 +582,9 @@ function onSensor(msg) {
       if (autoSounds.some(t => now - t > -5 && now - t < 70)) return;
     }                                                               // real taps are stronger, so they still play on loop beats
     if (document.body.classList.contains('show-endcard')) return;
-    if (!msg.accepted) return;                                      // not sure which square: skip, like crosstalk cancel
-    const zone = (!state.eightZones && msg.zone.endsWith('2')) ? msg.zone.slice(0, 2) : msg.zone;
+    let zone = (!state.eightZones && msg.zone.endsWith('2')) ? msg.zone.slice(0, 2) : msg.zone;
+    if (state.twoSides) zone = zone[0] === 'L' ? 'LB' : 'RB';      // simple mode: left side = kick, right side = snare (left/right is what the sensor tells apart reliably)
+    else if (!msg.accepted) return;                                 // not sure which square: skip, like crosstalk cancel
     if (ZONE_SOUND[zone]) hit('drum', ZONE_SOUND[zone], msg.vel, 'sensor');
   } else if (msg.type === 'touch') {
     onTouch(msg);
@@ -724,9 +723,11 @@ function wizGo() {
   }
   if (wiz.phase === 'advancing' || wiz.phase === 'noise' || wiz.phase === 'zone' || wiz.phase === 'soft' || wiz.phase === 'hard') return;
   if (wiz.step === 0) {
-    wiz.phase = 'noise'; cmd({ cmd: 'noise', seconds: 2 });
-    let t = 0; const iv = setInterval(() => { t += 100; $('#wizBar').style.width = `${Math.min(100, t / 20)}%`; if (t >= 2000) clearInterval(iv); }, 100);
-    wizShow('Measuring... stay still', 'Do not touch the laptop or the table.', 0, '', '...');
+    // A fixed trigger level instead of measuring the room: in a busy venue the measured floor came out
+    // so low (0.02 g) that table vibrations filled the calibration by themselves.
+    wiz.phase = 'advancing'; cmd({ cmd: 'threshold', value: 0.045 }); threshold = 0.045;
+    wizShow('Trigger level set', 'Only real taps count now, not table bumps.', 100, 'Taps above <b>0.045 g</b> count as hits.', '...');
+    setTimeout(wizNextStep, 700);
   } else if (wiz.step === 1) wizZone(0);
   else if (wiz.step === 2) wizVel('soft');
   else if (wiz.step === 3) wizTestNext();
@@ -903,6 +904,7 @@ function wire() {
     else if (k === 'g') state.air = Math.min(100, state.air + 20);
     else if (k === 'f') airFreshener();
     else if (k === 'h') hit('drum', 'synth_slow', 0.9);
+    else if (k === 'v' && e.shiftKey) { state.twoSides = !state.twoSides; toast(state.twoSides ? 'simple: left side kick, right side snare' : '4 tap spots (calibrated)'); }
     else if (k === 'v') setEightZones(!state.eightZones);
     else if (k === 'm') {
       state.tapsMuted = !state.tapsMuted;
